@@ -4,7 +4,7 @@ CarrierWave.configure do |config|
       :provider          =>     'AWS',
       :aws_access_key_id =>   ENV['s3_secret_key']  ,                        # required
       :aws_secret_access_key =>  ENV['s3_access_key'],
-
+      :region      =>  'us-west-2'
   }
   config.fog_directory  = ENV['s3_bucket']                        # required
 
