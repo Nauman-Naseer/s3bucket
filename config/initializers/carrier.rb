@@ -1,5 +1,5 @@
 CarrierWave.configure do |config|
-  config.fog_provider = 'fog/aws'
+
   config.fog_credentials = {
       :provider          =>     'AWS',
       :aws_access_key_id =>   ENV['s3_secret_key']  ,                        # required
