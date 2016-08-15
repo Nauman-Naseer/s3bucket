@@ -4,7 +4,7 @@ CarrierWave.configure do |config|
       :provider          =>     'AWS',
       :aws_access_key_id =>   'AKIAIKYHFUDGOLOLAZQQ' ,                        # required
       :aws_secret_access_key => '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' ,
-
+      :region => 'us-east-1'
   }
   config.fog_directory  = 'erssystem'                       # required
 
