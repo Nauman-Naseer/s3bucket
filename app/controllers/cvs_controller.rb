@@ -3,4 +3,7 @@ class CvsController <ApplicationController
 path=params[:id]
 @extractoin=Extraction.new(path)
   end
+  def index
+
+  end
 end

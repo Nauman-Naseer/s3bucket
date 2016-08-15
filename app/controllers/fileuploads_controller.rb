@@ -14,8 +14,8 @@ class FileuploadsController < ApplicationController
   @fileupload = Fileupload.new(resume_params)
 
   if @fileupload.save
-   redirect_to controller: 'cvs', action: 'new', id:@fileupload.attachment.path
-
+   #redirect_to controller: 'cvs', action: 'new', id:@fileupload.attachment.path
+redirect_to cvs_path
    #redirect_to new_cv_path ,name: '#{@fileupload.attachment.filename}'
   else
    render "new"
